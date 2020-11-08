@@ -1,0 +1,54 @@
+{% block content %}
+
+{% include 'accounts/status.html' %}
+<br>
+
+<div class="row">
+	<div class="col-md-5">
+		<h5>CUSTOMERS: </h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="#">Create Customer</a>
+			<table class="table table-sm">
+				<tr>
+					<th></th>
+					<th>Customer</th>
+					<th>Orders</th>
+				</tr>
+					<tr>
+						<td><a href="#" class="btn btn-sm btn-info">View</a></td>
+						<td>customer name</td>
+						<td>customer orders</td>
+					</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="col-md-7">
+		<h5>LAST 5 ORDERS</h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="#">Create Order</a>
+			<table class="table table-sm">
+				<tr>
+					<th>Product</th>
+					<th>Date Orderd</th>
+					<th>Status</th>
+					<th>Update</th>
+					<th>Remove</th>
+				</tr>
+					<tr>
+						<td>order product</td>
+						<td>order created date</td>
+						<td>order status</td>
+						<td><a class="btn btn-sm btn-warning" href="#">Update</a></td>
+						<td><a class="btn btn-sm btn-danger" href="#">Cancel</a></td>
+					</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+		<hr>
+<h5>Our Footer</h5>
+{% endblock content %}
